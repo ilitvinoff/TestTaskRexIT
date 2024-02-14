@@ -1,0 +1,6 @@
+category,firstname,lastname,email,gender,birthDate
+Sports,John,Doe,johndoe@example.com,Male,1990-05-15
+Entertainment,Alice,Smith,alicesmith@example.com,Female,1985-09-20
+Technology,Michael,Johnson,michaeljohnson@example.com,Male,1988-12-10
+Fashion,Emily,Brown,emilybrown@example.com,Female,1995-03-25
+Sports,David,Williams,davidwilliams@example.com,Male,1982-07-18
