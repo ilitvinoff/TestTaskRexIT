@@ -28,10 +28,11 @@ class InsertDatasetSerializer(serializers.Serializer):
         try:
             for row in reader:
                 gender = Dataset.Gender.UNKNOWN  # Default to UNKNOWN if gender is not specified
-                if row['gender'].lower() == 'female':
-                    gender = Dataset.Gender.FEMALE
-                elif row['gender'].lower() == 'male':
-                    gender = Dataset.Gender.MALE
+                if row.get('gender'):
+                    if row.get('gender').lower() == 'female':
+                        gender = Dataset.Gender.FEMALE
+                    elif row.get('gender').lower() == 'male':
+                        gender = Dataset.Gender.MALE
 
                 dataset = Dataset(
                     category=row.get('category'),
