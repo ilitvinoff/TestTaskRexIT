@@ -43,7 +43,7 @@ To get started with the project, follow these steps:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/yourusername/dataset-service.git
+    git clone https://github.com/ilitvinoff/TestTaskRexIT.git
     ```
 
 2. Navigate to the project directory:
@@ -79,6 +79,8 @@ The API allows filtering the dataset by various criteria, including:
 - Lastname
 - Email
 - Gender
+- Age
+- Age Range
 - Date of Birth
 - Date of Birth Range
 
