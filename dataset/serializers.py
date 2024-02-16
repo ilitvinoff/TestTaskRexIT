@@ -55,12 +55,12 @@ class InsertDatasetSerializer(serializers.Serializer):
                     saved += 1
 
         except:
-            return {"error": f"file corrupted"}
+            raise serializers.ValidationError("file corrupted")
 
         try:
             Dataset.objects.bulk_create(datasets)
         except:
-            return {"error": f"something went wrong"}
+            raise serializers.ValidationError("something went wrong")
 
         return {"response": f"{i} rows were processed.{saved} data rows parsed and saved successfully."}
 
